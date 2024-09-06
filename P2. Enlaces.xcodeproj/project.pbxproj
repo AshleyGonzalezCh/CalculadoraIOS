@@ -16,6 +16,7 @@
 		FB466FC72C821A3C006ED2A4 /* P2__EnlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB466FC62C821A3C006ED2A4 /* P2__EnlacesTests.swift */; };
 		FB466FD12C821A3C006ED2A4 /* P2__EnlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB466FD02C821A3C006ED2A4 /* P2__EnlacesUITests.swift */; };
 		FB466FD32C821A3C006ED2A4 /* P2__EnlacesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB466FD22C821A3C006ED2A4 /* P2__EnlacesUITestsLaunchTests.swift */; };
+		FB6902182C8B57CE007A1E29 /* Botones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6902172C8B57CE007A1E29 /* Botones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FB466FCC2C821A3C006ED2A4 /* P2. EnlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "P2. EnlacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB466FD02C821A3C006ED2A4 /* P2__EnlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2__EnlacesUITests.swift; sourceTree = "<group>"; };
 		FB466FD22C821A3C006ED2A4 /* P2__EnlacesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2__EnlacesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB6902172C8B57CE007A1E29 /* Botones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botones.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		FB466FAE2C821A3C006ED2A4 /* P2. Enlaces */ = {
 			isa = PBXGroup;
 			children = (
+				FB6902162C8B57BC007A1E29 /* Interfaz */,
 				FB466FAF2C821A3C006ED2A4 /* AppDelegate.swift */,
 				FB466FB12C821A3C006ED2A4 /* SceneDelegate.swift */,
 				FB466FB32C821A3C006ED2A4 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				FB466FD22C821A3C006ED2A4 /* P2__EnlacesUITestsLaunchTests.swift */,
 			);
 			path = "P2. EnlacesUITests";
+			sourceTree = "<group>";
+		};
+		FB6902162C8B57BC007A1E29 /* Interfaz */ = {
+			isa = PBXGroup;
+			children = (
+				FB6902172C8B57CE007A1E29 /* Botones.swift */,
+			);
+			path = Interfaz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				FB466FB42C821A3C006ED2A4 /* ViewController.swift in Sources */,
 				FB466FB02C821A3C006ED2A4 /* AppDelegate.swift in Sources */,
+				FB6902182C8B57CE007A1E29 /* Botones.swift in Sources */,
 				FB466FB22C821A3C006ED2A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

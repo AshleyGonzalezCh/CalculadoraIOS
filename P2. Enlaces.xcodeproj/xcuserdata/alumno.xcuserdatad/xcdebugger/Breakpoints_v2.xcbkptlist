@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F3D0101E-E324-484D-89F5-74FC8A9E98DB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC78D7D4-192D-4DCE-AAE3-EEB76B47BA45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "P2. Enlaces/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "Boton_Presionado(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AC78D7D4-192D-4DCE-AAE3-EEB76B47BA45 - 85c4c75996511867"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "P2__Enlaces.ViewController.AccionAlPicarBtn(__C.UIButton) -&gt; ()"
+                  moduleName = "P2. Enlaces"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alumno/Desktop/P2.%20Enlaces/P2.%20Enlaces/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52">
+               </Location>
+               <Location
+                  uuid = "AC78D7D4-192D-4DCE-AAE3-EEB76B47BA45 - d4ebd4a9bf63a1e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "P2__Enlaces.ViewController.Boton_Presionado(__C.UIButton) -&gt; ()"
+                  moduleName = "P2. Enlaces"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alumno/Desktop/P2.%20Enlaces/P2.%20Enlaces/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

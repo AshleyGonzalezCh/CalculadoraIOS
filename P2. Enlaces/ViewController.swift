@@ -11,6 +11,9 @@ class ViewController: UIViewController {
     //ESPACIO PARA DECLARAR BOTONES O ELEMENTOS VISUALES
     @IBOutlet weak var Etiqueta: UILabel!
     //ESPACIO PARA DECLARAR VARIABLES
+    var botones_interfaz: Array<UIBotonesCalculadora> = []
+    
+    
     var InputActual: Double = 0
     var InputAnterior: Double = 0
     var Operador: String = ""
@@ -20,10 +23,32 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
+    
+    
+    
+    /* @IBAction func AccionAlPicarBtn (_ sender: UIButton){
+        let textoAñadir = botones_interfaz[(sender.restorationIdentifier ?? BtnOperacion.restorarinIdentifier) ?? "Boton"]?.numero
+        textoAñadir.text = "\(Etiqueta.text)\(textoAñadir))"
 
+    }
+    
+    func iniciar_calculadora() -> Void {
+        crear_arreglo()
+    }
+    
+    func crear_arreglo() -> Void{
+        for numero in 0...9{
+            botones_interfaz.append(
+                UIBotonesCalculadora(
+                    "Boton_\(numero)", numero: Character("\(numero)"), operacion: ""
+                ))
+        }
+    }
+*/
     @IBAction func Boton_Presionado(_ sender: UIButton) {
-        let numero = sender.currentTitle!
+        /*var numero = sender.currentTitle!
         if OpSeleccionada{
             Etiqueta.text = numero
             OpSeleccionada = false
@@ -31,7 +56,7 @@ class ViewController: UIViewController {
         else {
             Etiqueta.text = Etiqueta.text! + numero
         }
-        InputActual = Double(Etiqueta.text!)!
+        InputActual = Double(Etiqueta.text!)!*/
     }
     
     @IBAction func OpSel (_ sender: UIButton){
@@ -45,6 +70,7 @@ class ViewController: UIViewController {
         InputActual = 0;
         InputAnterior = 0;
         Operador = "";
+        OpSeleccionada = false;
         
     }
     
