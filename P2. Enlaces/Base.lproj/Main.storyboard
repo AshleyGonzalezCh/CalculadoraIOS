@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVa-1u-1Z6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVa-1u-1Z6">
                                 <rect key="frame" x="58.666666666666657" y="338" width="276" height="44"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,8 +104,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Resultado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fa4-U0-d0z"/>
-                                    <action selector="botonPresionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yvf-DK-zRU"/>
+                                    <action selector="OpSel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqz-21-1NB"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="center" misplaced="YES" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ull-b7-R7q">
@@ -160,7 +159,6 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="OpSel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xOF-lY-JNY"/>
                                             <action selector="botonPresionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gip-YS-FVQ"/>
                                         </connections>
                                     </button>
@@ -253,7 +251,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="botonPresionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJB-ZF-giB"/>
+                                            <action selector="Limpiar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eE7-ra-4mQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIU-qy-JBw">

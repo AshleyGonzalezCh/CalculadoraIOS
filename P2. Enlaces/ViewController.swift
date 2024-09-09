@@ -7,7 +7,17 @@
 
 import UIKit
 
+enum estados_de_la_calculadora{
+    case seleccionar_numeros
+    case escoger_operacion
+    case mostrar_resultado
+}
+
+
 class ViewController: UIViewController {
+    //ESTADOS DE LA CALCULADORA
+    var estado_actual : estados_de_la_calculadora = estados_de_la_calculadora.seleccionar_numeros
+    
     //ESPACIO PARA DECLARAR BOTONES O ELEMENTOS VISUALES
     @IBOutlet weak var Etiqueta: UILabel!
     //ESPACIO PARA DECLARAR VARIABLES
@@ -20,6 +30,10 @@ class ViewController: UIViewController {
     var OpSeleccionada : Bool = false
     
     
+    //VARIABLES DE LA CLASE
+    var operacionActual: String? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,23 +41,53 @@ class ViewController: UIViewController {
     }
     
     
-    /*func iniciar_calculadora() -> Void {
+    /*
+     func iniciar_calculadora() -> Void {
         crear_arreglo()
     }
     
     func crear_arreglo() -> Void{
         botones_interfaz = UIBotonesCalculadora.crear_arreglo();
         
-    }*/
+    }
     
-    /*@IBAction func AccionAlPicarBtn (_ sender: UIButton){
-        let textoAñadir = botones_interfaz[(sender.restorationIdentifier ?? BtnOperacion.restorarinIdentifier) ?? "Boton"]?.numero
-        textoAñadir.text = "\(Etiqueta.text)\(textoAñadir))"
+    @IBAction func AccionAlPicarBtn (_ sender: UIButton){
+        if(estado_actual == estados_de_la_calculadora.seleccionar_numeros){
+            let textoAñadir = botones_interfaz[(sender.restorationIdentifier ??
+                                                boton_operacion.restorationIdentifier) ?? "boton"]?.numero
+            textoAñadir.text = "\(textoAñadir.text ?? "")\(textoAñadir!)"
+        }
+        
+        else if (estado_actual == estados_de_la_calculadora.escoger_operacion){
+            if let _mensajero: UIButton? = sender {
+                operacionActual = botones_interfaz[_mensajero!.restorationIdentifier]
+            }
+        }
 
-    }*/
+    }
+
+    @IBAction func btn_operacion_pulsado(_ sendes: UIButton){
+        if (estado_actual == estados_de_la_calculadora.seleccionar_numeros){
+            estado_actual.estados_de_la_calculadora.escoger_operacion()
+            mostrar_numOp()
+        }
+    }
     
-   /*
-    CODIGO VIEJO
+    func mostrar_numOp(){
+        if(estado_actual == estados_de_la_calculadora.escoger_operacion){
+            
+        }
+        
+        else if(estado_actual == estados_de_la_calculadora.seleccionar_numeros){
+            
+        }
+    }
+     
+     */
+    
+    
+    
+   /* MI CODIGO VIEJO
     
     @IBAction func Boton_Presionado(_ sender: UIButton) {
         var numero = sender.titleLabel?.text ?? ""
@@ -78,6 +122,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func OpSel (_ sender: UIButton){
+        print("Pulsaste este boton")
         
         if OpSeleccionada {
                 Resultado()
@@ -94,11 +139,11 @@ class ViewController: UIViewController {
         InputAnterior = 0
         Operador = ""
         OpSeleccionada = false
-        Etiqueta.text = "0"
+        Etiqueta.text = ""
         
     }
     
-    @IBAction func Resultado(_ sender: UIButton) {
+   func Resultado() {
         switch Operador {
                 case "+":
                     InputActual = InputAnterior + InputActual
