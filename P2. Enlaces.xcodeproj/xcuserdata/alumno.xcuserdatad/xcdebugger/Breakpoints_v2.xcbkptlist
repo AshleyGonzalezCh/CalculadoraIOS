@@ -7,47 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AC78D7D4-192D-4DCE-AAE3-EEB76B47BA45"
+            uuid = "DB19E800-264C-40B0-9FBF-15CFDB86800A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "P2. Enlaces/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "Boton_Presionado(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "iniciar_calculadora()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AC78D7D4-192D-4DCE-AAE3-EEB76B47BA45 - 85c4c75996511867"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "P2__Enlaces.ViewController.AccionAlPicarBtn(__C.UIButton) -&gt; ()"
-                  moduleName = "P2. Enlaces"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alumno/Desktop/P2.%20Enlaces/P2.%20Enlaces/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52">
-               </Location>
-               <Location
-                  uuid = "AC78D7D4-192D-4DCE-AAE3-EEB76B47BA45 - d4ebd4a9bf63a1e7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "P2__Enlaces.ViewController.Boton_Presionado(__C.UIButton) -&gt; ()"
-                  moduleName = "P2. Enlaces"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alumno/Desktop/P2.%20Enlaces/P2.%20Enlaces/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "60"
-                  endingLineNumber = "60">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
