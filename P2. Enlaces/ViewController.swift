@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     var estado_actual : estados_de_la_calculadora = estados_de_la_calculadora.seleccionar_numeros
     
     //ESPACIO PARA DECLARAR BOTONES O ELEMENTOS VISUALES
+    @IBOutlet weak var Div: UIButton!
+    @IBOutlet weak var Mult: UIButton!
+    @IBOutlet weak var Suma: UIButton!
+    @IBOutlet weak var Resta: UIButton!
     @IBOutlet weak var Etiqueta: UILabel!
     //ESPACIO PARA DECLARAR VARIABLES
     var botones_interfaz: Array<UIBotonesCalculadora> = []
@@ -37,6 +41,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        Suma.setTitle("+", for: .normal)
+        Resta.setTitle("-", for: .normal)
+        Mult.setTitle("*", for: .normal)
+        Div.setTitle("/", for: .normal)
         
     }
     
@@ -105,6 +114,7 @@ class ViewController: UIViewController {
         let numero = sender.titleLabel?.text ?? ""
         
         if OpSeleccionada {
+            Etiqueta.text = "" 
             Etiqueta.text = numero
             OpSeleccionada = false
         } else {
@@ -122,15 +132,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func OpSel (_ sender: UIButton){
-        print("Pulsaste este boton")
-        
-        if OpSeleccionada {
-                Resultado()
-            }
-            
-            Operador = sender.currentTitle ?? ""
+        if let btnOp = sender.currentTitle{
+            Operador = btnOp
             InputAnterior = InputActual
             OpSeleccionada = true
+            print("Operador", Operador)
+        }
+        
+        else {print("No operador")}
+            //Operador = sender.currentTitle ?? ""
+            
+        
     }
     
     
@@ -143,7 +155,13 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func BotonResulSel (_ sender: UIButton){
+        Resultado();
+    }
+    
+    
    func Resultado() {
+       print("RESULTADO")
         switch Operador {
                 case "+":
                     InputActual = InputAnterior + InputActual
